@@ -12,7 +12,7 @@ const Cart = () => {
 
     let orderList = (
         <div>
-            Ban ko co order
+            You have no product in cart
         </div>
     )
     if(order.length!==0) {
@@ -27,12 +27,12 @@ const Cart = () => {
 
     return (
         <div className='cart_container'>
-            <h3>Order cua ban la</h3>
+            <h3>Your cart:</h3>
             {orderList}
-            <Button onClick={clearOrder}> Clear Order </Button>
+            <button onClick={clearOrder}> Clear Order </button>
             <div style={{margin: '20px 0'}}>
                 <Link to='/menu'>
-                    <Button>San pham</Button>
+                    <Button>To Product</Button>
                 </Link>
             </div>
         </div>

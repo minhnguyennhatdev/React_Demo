@@ -33,12 +33,12 @@ const ProductList = () => {
 
     return (
         <div className='product_container'>
-            <h1>San pham</h1>
+            <h1>Products</h1>
             {body}
             <Link to='/cart'>
-                <Button>Gio hang</Button>
+                <Button>To Cart</Button>
             </Link>
-            <h4>Ban co {order.length} san pham trong gio hang</h4>
+            <h4>You have {order.length} in Cart</h4>
         </div>
     )
 }
