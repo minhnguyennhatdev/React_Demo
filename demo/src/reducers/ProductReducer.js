@@ -14,6 +14,11 @@ const ProductReducer = (state, action) => {
                 ...state,
                 order: [...state.order, payload]
             }
+        case 'CLEAR_ORDER':
+            return {
+                ...state,
+                order: []
+            }
         default:
             return state
     }
